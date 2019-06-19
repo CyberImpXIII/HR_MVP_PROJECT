@@ -1,0 +1,72 @@
+{
+  "name": "Collectr0n_data-visualizer",
+  "version": "1.0.0",
+  "description": "Ebay Vs ShopGoodwill Datavis and scraping tool",
+  "main": "index.js",
+  "scripts": {
+    "watch": "rimraf dist && webpack --watch",
+    "start": "webpack-dev-server  --open --color ",
+    "build": "rimraf dist &&  webpack --progress --profile",
+    "server": "nodemon server/server.js",
+    "server-prod": "node server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none yet"
+  },
+  "author": "Jacob Nelsen-Epstein (Boilerplate build by James Demsey)",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-loadable": "^5.4.0",
+    "react-router-dom": "^4.2.2"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              ">1%",
+              "last 3 versions"
+            ]
+          }
+        }
+      ],
+      "stage-2",
+      "latest",
+      "react"
+    ],
+    "plugins": [
+      "syntax-dynamic-import",
+      "transform-class-properties"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.0",
+    "rimraf": "^2.6.2",
+    "style-loader": "^0.21.0",
+    "uglifyjs-webpack-plugin": "^1.2.5",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
