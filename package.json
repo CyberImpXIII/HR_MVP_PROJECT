@@ -20,6 +20,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "nightmare": "^3.0.2",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-loadable": "^5.4.0",
