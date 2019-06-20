@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "rimraf dist && webpack --watch",
     "start": "webpack-dev-server  --open --color ",
-    "build": "rimraf dist &&  webpack --progress --profile",
+    "build": "rimraf dist &&  webpack --progress --profile --watch",
     "server": "nodemon server/server.js",
     "server-prod": "node server/server.js"
   },
@@ -19,6 +19,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
+    "chart.js": "^2.8.0",
     "express": "^4.16.4",
     "nightmare": "^3.0.2",
     "react": "^16.3.2",
